@@ -1,11 +1,29 @@
+:root {
+    --cor-primaria: #e21;
+    --cor-primaria-escura: #900;
+    --fundo1: #f7f7f7;
+    --fundo2: #fff;
+    --texto: #000;
+}
+
+/* TEMA ESCURO
+@media (prefers-color-scheme: dark) {
+    :root {
+        --fundo1: #111;
+        --fundo2: #000;
+        --texto:#fff; 
+    }
+} */
+
 body {
-    background: #f7f7f7;
+    background: var(--fundo1);
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
     display: grid;
     gap: 3.75rem;
     justify-items: center;
     margin-top: 3.75rem;
+    color: var(--texto);
 }
 
 header {
@@ -33,14 +51,14 @@ ul {
     text-decoration: none;
     text-transform: uppercase;
     padding: 1rem 2rem;
-    background: #fff;
+    background: var(--fundo2);
     border-radius: 4px;
-    color: #000;
+    color: var(--texto);
     border: 2px solid transparent;
 }
 
 .menu-item:hover {
-    border-color: #e21;
+    border-color: var(--cor-primaria);
 }
 
 .bike-img img {
@@ -66,7 +84,7 @@ p {
 }
 
 .intro {
-    background: #fff;
+    background: var(--fundo2);
     padding: 2.5rem;
     text-align: right;
     position: relative;
@@ -84,7 +102,7 @@ p {
     content: "";
     width: 3.75rem;
     height: 4px;
-    background: #e21;
+    background: var(--cor-primaria);
     display: inline-block;
     position: absolute;
     right: -30px;
@@ -92,8 +110,8 @@ p {
 }
 
 .botao {
-    background: #e21;
-    color: #fff;
+    background: var(--cor-primaria);
+    color: var(--fundo2);
     padding: 1rem 2rem;
     border-radius: 4px;
     text-transform: uppercase;
@@ -101,7 +119,7 @@ p {
 }
 
 .botao:hover {
-    background: #900;
+    background: var(--cor-primaria-escura);
 }
 
 .subtitulo {
@@ -117,7 +135,7 @@ p {
 }
 
 .vantagens {
-    background: #fff;
+    background: var(--fundo2);
     padding: 2.5rem;
 
 }
@@ -130,11 +148,11 @@ p {
 }
 
 .vantagens-item:nth-child(odd) {
-    background: #f7f7f7;
+    background: var(--fundo1);
 }
 
 .vantagens-item:hover {
-    border-left: 4px solid #e21;
+    border-left: 4px solid var(--cor-primaria);
 }
 
 .vantagens-item p {
@@ -143,7 +161,7 @@ p {
 
 
 .rodape {
-    background: #fff;
+    background: var(--fundo2);
     width: 100%;
     text-align: center;
     padding: 2.5rem;
