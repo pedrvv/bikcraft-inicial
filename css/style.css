@@ -168,6 +168,11 @@ p {
     box-sizing: border-box;
 }
 
+.rodape a {
+    text-decoration: none;
+    color: #e21;
+}
+
 @media (max-width: 1000px) {
     .conteudo-vantagem {
         grid-template-columns: 1fr;
